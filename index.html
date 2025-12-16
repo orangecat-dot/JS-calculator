@@ -14,27 +14,29 @@
                     <h1>My Calculator</h1>
                 </div>
                         <div class="screen">
-                            <input id="InputDisplay" readonly></input>
-                            <output id="outputDisplay"></output>
+                            <input id="upperScreen" readonly></input>
+                            <input id="lowerScreen" readonly></input>
                             <div class="buttonGrid">
-                                <button onclick="appendtoDisplay('+')" class="operator-btn">+</button>
+                                <button onclick="clearDisplay()" class="operator-btn2">C</button>
+                                <button onclick="allclearDisplay()" class="operator-btn2">AC</button>
+                                <button onclick="getPercentage()" class="operator-btn2">%</button>
+                                <button class="operator-btn" id="mainOp">+</button>
                                 <button onclick="appendtoDisplay('7')">7</button>
-                                <button onclick="appendtoDisplay('8')">8</button>
+                                <button onclick="appendtoDisplay('8')">8</button>                             
                                 <button onclick="appendtoDisplay('9')">9</button>
-                                <button onclick="appendtoDisplay('-')" class="operator-btn">-</button>
+                                <button class="operator-btn" id="mainOp">-</button> 
                                 <button onclick="appendtoDisplay('4')">4</button>
                                 <button onclick="appendtoDisplay('5')">5</button>
                                 <button onclick="appendtoDisplay('6')">6</button>
-                                <button onclick="appendtoDisplay('*')" class="operator-btn">x</button>
+                                <button class="operator-btn" id="mainOp">x</button>
                                 <button onclick="appendtoDisplay('1')">1</button>
                                 <button onclick="appendtoDisplay('2')">2</button>
                                 <button onclick="appendtoDisplay('3')">3</button>
-                                <button onclick="appendtoDisplay('/')" class="operator-btn">/</button>
+                                <button class="operator-btn" id="mainOp">/</button>
+                                <button onclick="getPositiveNegative()">±</button>
                                 <button onclick="appendtoDisplay('0')">0</button>
-                                <button onclick="appendtoDisplay('.')">.</button>
+                                <button onclick="appendtoDisplay('.')">.</button> 
                                 <button onclick="calculate()" class="operator-btn">=</button>
-                                <button onclick="clearDisplay()" class="operator-btn">C</button>
-                                <button onclick="allclearDisplay()" class="operator-btn">AC</button>
                                 
                             </div>
                         </div>

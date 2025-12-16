@@ -10,28 +10,29 @@
 .screen {
     display: flex;
     flex-direction: column;
-    background-color: hsl(0, 0%, 20%);
+    background-color: black;
     max-width: 500px;
     overflow: hidden;
     border-radius: 15px;
+    padding: 15px;
 }
 
-input {
+#upperScreen {
     width: 100%;
     border: none;
-    background-color: hsl(0, 0%, 20%);
+    background-color: black;
     color: gray;
-    padding: 15px;
     font-size: 35px;
+
 }
 
-output {
+#lowerScreen {
     width: 100%;
-    padding: 25px;
-    background-color: hsl(0, 0%, 20%);
+    background-color: black;
     color: white;
     border: none;
     font-size: 40px;
+    text-align: right;
 }
 
 .buttonGrid {
@@ -70,5 +71,19 @@ button:active {
 }
 .operator-btn:active {
     background-color: hsl(29, 100%, 75%);
+
+}
+
+.operator-btn2 {
+    background-color: hsl(30, 3%, 58%);
+}
+
+.operator-btn2:hover {
+    background-color: hsl(30, 3%, 70%);
+
+}
+
+.operator-btn2:active {
+    background-color: hsl(30, 3%, 80%);
 
 }
